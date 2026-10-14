@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="assets/images/branding/titan-diesel-favicon.svg">
+  <title>Diesel Services Directory | Titan Diesel Works</title>
+  <meta name="description" content="Explore our full catalog of 10 specialized heavy-duty diesel services: engine diagnostics, precision rebuilds, turbocharger systems, fuel injection, and fleet care.">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Diesel Services Directory | Titan Diesel Works">
+  <meta property="og:description" content="Complete heavy-duty diesel truck repair, diagnostics, and high-output performance solutions.">
+  <meta property="og:image" content="assets/images/hero/hero-services.jpg">
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Oswald:wght@500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <nav class="navbar navbar-expand-lg navbar-dark py-3">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <div class="brand-mark">T</div>
+          <div class="brand-text">
+            <span class="brand-name">TITAN <span>DIESEL</span></span>
+            <span class="brand-sub">HEAVY REPAIR & PERFORMANCE</span>
+          </div>
+        </a>
+
+        <div class="d-flex align-items-center gap-2 order-lg-3">
+          <div class="nav-controls">
+            <button type="button" class="control-btn theme-toggle-btn" aria-label="Toggle Theme" title="Switch Theme">
+              <i class="bi bi-sun-fill"></i>
+            </button>
+            <button type="button" class="control-btn rtl-toggle-btn" aria-label="Toggle Layout Direction" title="Toggle RTL">
+              <span class="btn-label font-mono fw-bold" style="font-size: 0.75rem;">RTL</span>
+            </button>
+          </div>
+          <button type="button" class="btn btn-industrial-primary btn-industrial-sm d-none d-sm-inline-flex ms-2 btn-book-service" data-bs-toggle="modal" data-bs-target="#serviceBookingModal">
+            <i class="bi bi-calendar-check me-1"></i> Book a Service
+          </button>
+          <button class="navbar-toggler border-secondary ms-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTitanNav" aria-controls="navbarTitanNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+
+        <div class="collapse navbar-collapse order-lg-2" id="navbarTitanNav">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Home <i class="bi bi-chevron-down nav-chevron ms-1"></i></a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="index.html"><i class="bi bi-wrench me-2 text-accent"></i> Home 1: Heavy Diesel Landing</a></li>
+                <li><a class="dropdown-item" href="home-2.html"><i class="bi bi-speedometer2 me-2 text-accent"></i> Home 2: Performance & Fleet</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+            <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing Guide</a></li>
+            <li class="nav-item"><a class="nav-link" href="blog.html">Tech Journal</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ========================================================================
+         SECTION 1: SERVICES HERO
+         Full-width banner and live search trigger
+         ======================================================================== -->
+    <section class="detail-hero">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-8">
+            <span class="section-tagline"><i class="bi bi-wrench-adjustable"></i> Complete Diesel Solutions</span>
+            <h1 class="display-4 font-heading text-uppercase mb-3">Heavy-Duty Repair & Performance Services</h1>
+            <p class="lead text-secondary mb-4" style="font-size: 1.15rem; max-width: 650px;">
+              From OEM computer diagnostics and fuel rail testing to full in-frame long-block rebuilds and commercial fleet maintenance, explore our comprehensive technical service catalog.
+            </p>
+            <div class="d-flex flex-wrap gap-3">
+              <a href="#directorySection" class="btn btn-industrial-primary">
+                <i class="bi bi-search me-2"></i> Search Service Catalog
+              </a>
+              <a href="pricing.html" class="btn btn-industrial-secondary">
+                <i class="bi bi-cash-stack me-2"></i> View Pricing Guide
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-4 mt-4 mt-lg-0">
+            <div class="rounded overflow-hidden border border-secondary shadow-lg">
+              <img src="assets/images/hero/hero-services.jpg" alt="Technician performing diesel engine diagnostics" class="img-fluid w-100" style="height: 280px; object-fit: cover; object-position: center;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         SECTION 2: WORKSHOP CAPABILITIES OVERVIEW
+         Highlights of diagnostic equipment and certifications
+         ======================================================================== -->
+    <section class="section-py bg-subtle-theme border-bottom border-secondary">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-3 col-sm-6">
+            <div class="p-4 rounded border border-secondary bg-surface h-100">
+              <i class="bi bi-cpu fs-2 text-accent mb-2 d-block"></i>
+              <h5 class="font-heading mb-1">OEM Telemetry</h5>
+              <p class="small text-secondary mb-0">Genuine Ford FDRS, GM GDS2, Cummins INSITE, CAT ET and Detroit Diagnostic Link subscriptions.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="p-4 rounded border border-secondary bg-surface h-100">
+              <i class="bi bi-droplet-half fs-2 text-accent mb-2 d-block"></i>
+              <h5 class="font-heading mb-1">Clean-Room Fuel Lab</h5>
+              <p class="small text-secondary mb-0">Bosch high-pressure test benches to balance common rail injectors and CP3/CP4 pumps to 2 microns.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="p-4 rounded border border-secondary bg-surface h-100">
+              <i class="bi bi-speedometer2 fs-2 text-accent mb-2 d-block"></i>
+              <h5 class="font-heading mb-1">SuperFlow Chassis Dyno</h5>
+              <p class="small text-secondary mb-0">In-house dynamometer capable of absorbing 2,500+ lb-ft of torque to verify loaded towing power.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="p-4 rounded border border-secondary bg-surface h-100">
+              <i class="bi bi-shield-check fs-2 text-accent mb-2 d-block"></i>
+              <h5 class="font-heading mb-1">2-Yr / 24k Warranty</h5>
+              <p class="small text-secondary mb-0">Every mechanical overhaul and high-pressure repair is backed by our written nationwide warranty.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         SECTION 3: SEARCHABLE & FILTERABLE SERVICE DIRECTORY
+         All 10 services dynamically filtered and rendered via services.js
+         ======================================================================== -->
+    <section class="section-py bg-primary-theme" id="directorySection">
+      <div class="container">
+        <div class="section-header text-center mb-4">
+          <span class="section-tagline"><i class="bi bi-grid-3x3-gap"></i> Interactive Catalog</span>
+          <h2 class="section-title">Explore Specialized Diesel Services</h2>
+          <p class="section-description mx-auto">Filter by service division or search directly by system symptom or component.</p>
+        </div>
+
+        <!-- Search Bar & Category Filter Pills -->
+        <div class="row justify-content-center mb-4">
+          <div class="col-lg-6 col-md-8 mb-3">
+            <div class="input-group">
+              <span class="input-group-text bg-secondary border-secondary text-accent"><i class="bi bi-search"></i></span>
+              <input type="text" id="serviceSearchInput" class="form-control" placeholder="Search by service (e.g. Turbo, Injector, Allison, DPF, Radiator)..." aria-label="Search diesel services">
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex flex-wrap justify-content-center gap-2 mb-4">
+          <button class="btn btn-industrial-secondary btn-industrial-sm service-filter-pill active" data-filter="all">All Services (9)</button>
+          <button class="btn btn-industrial-secondary btn-industrial-sm service-filter-pill" data-filter="diagnostics">Diagnostics</button>
+          <button class="btn btn-industrial-secondary btn-industrial-sm service-filter-pill" data-filter="repair">Engine & Drivetrain</button>
+          <button class="btn btn-industrial-secondary btn-industrial-sm service-filter-pill" data-filter="performance">Performance Upgrades</button>
+          <button class="btn btn-industrial-secondary btn-industrial-sm service-filter-pill" data-filter="maintenance">Preventive Maintenance</button>
+        </div>
+
+        <div class="text-center mb-4">
+          <span id="serviceCountBadge" class="badge bg-secondary border border-secondary text-accent font-mono">9 Services Available</span>
+        </div>
+
+        <!-- Dynamic Service Grid (Injected via services.js) -->
+        <div class="row g-4" id="servicesDirectoryGrid">
+          <!-- Populated by assets/js/services.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         SECTION 4: HEAVY REPAIR VS PERFORMANCE UPGRADES (SPLIT FOCUS)
+         Why mechanical reliability precedes power tuning
+         ======================================================================== -->
+    <section class="section-py bg-subtle-theme border-top border-secondary">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <span class="section-tagline"><i class="bi bi-sliders"></i> Integrated Engineering</span>
+            <h2 class="display-6 font-heading mb-3">The Synergy Between Repair & Performance</h2>
+            <div class="industrial-divider"></div>
+            <p class="text-secondary mb-3" style="font-size: 1.05rem; line-height: 1.8;">
+              At Titan Diesel Works, we don't separate heavy-duty repair from performance upgrades. A truck that is tuned for 750 horsepower without upgraded head studs, a proper lift pump, and a high-flow intercooler will soon end up in our engine rebuild bay with a blown head gasket and cracked piston.
+            </p>
+            <p class="text-secondary mb-4" style="font-size: 1.05rem; line-height: 1.8;">
+              When our technicians rebuild a long block or replace a turbocharger, we incorporate reliability-enhancing upgrades—such as billet unison rings, ARP Custom Age 625+ studs, and ceramic-coated piston crowns—ensuring your truck returns to work stronger and cooler than factory stock.
+            </p>
+            <a href="projects.html" class="btn btn-industrial-secondary">
+              <i class="bi bi-speedometer2 me-2"></i> Review Our Dyno Case Studies
+            </a>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="p-4 rounded border border-secondary bg-surface">
+              <h4 class="font-heading mb-3 text-accent"><i class="bi bi-shield-shaded me-2"></i> The Titan Reliability Hierarchy</h4>
+              <div class="d-flex flex-column gap-3">
+                <div class="p-3 rounded bg-subtle border border-secondary">
+                  <div class="d-flex justify-content-between mb-1">
+                    <strong class="font-heading text-uppercase">1. Structural Sealing</strong>
+                    <span class="text-accent font-mono small">Step 1</span>
+                  </div>
+                  <p class="small text-secondary mb-0">ARP head studs, MLS head gaskets, and precision cylinder head surface finish (< 30 Ra).</p>
+                </div>
+                <div class="p-3 rounded bg-subtle border border-secondary">
+                  <div class="d-flex justify-content-between mb-1">
+                    <strong class="font-heading text-uppercase">2. Fuel & Air De-Aeration</strong>
+                    <span class="text-accent font-mono small">Step 2</span>
+                  </div>
+                  <p class="small text-secondary mb-0">FASS/AirDog positive lift pumps, 2-micron filtration, and high-efficiency compound turbocharging.</p>
+                </div>
+                <div class="p-3 rounded bg-subtle border border-secondary">
+                  <div class="d-flex justify-content-between mb-1">
+                    <strong class="font-heading text-uppercase">3. Thermal Management</strong>
+                    <span class="text-accent font-mono small">Step 3</span>
+                  </div>
+                  <p class="small text-secondary mb-0">All-aluminum radiators, helical stainless EGR coolers, and remote transmission stacked-plate coolers.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         SECTION 5: FLEET PREVENTIVE MAINTENANCE & COMMERCIAL PROGRAMS
+         Uptime, DOT safety, lower cost-per-mile
+         ======================================================================== -->
+    <section class="section-py bg-primary-theme">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6 order-lg-2">
+            <span class="section-tagline"><i class="bi bi-truck"></i> Commercial Fleet Care</span>
+            <h2 class="display-6 font-heading mb-3">Keep Your Commercial Assets On the Road</h2>
+            <div class="industrial-divider"></div>
+            <p class="text-secondary mb-3" style="font-size: 1.05rem; line-height: 1.8;">
+              Whether your company operates 3 service trucks or 50 medium-duty delivery rigs, fleet downtime directly erodes your margins. Titan's Fleet Care Program delivers scheduled night PM services, priority bay triage, and automated maintenance records that satisfy Federal Motor Carrier Safety Administration (FMCSA) audits.
+            </p>
+            <ul class="list-unstyled text-secondary mb-4">
+              <li class="mb-2"><i class="bi bi-check2-circle text-accent me-2"></i> <strong>Annual Federal DOT Safety Inspections:</strong> Certified brake, steering, and chassis safety checks with official decals.</li>
+              <li class="mb-2"><i class="bi bi-check2-circle text-accent me-2"></i> <strong>DPF Thermal Regeneration:</strong> Ultrasonic pulse de-ashing and kiln baking that restores 98%+ exhaust flow.</li>
+              <li class="mb-2"><i class="bi bi-check2-circle text-accent me-2"></i> <strong>Volume Fleet Pricing:</strong> Discounted labor rates, priority parts procurement, and 30-day corporate terms.</li>
+            </ul>
+            <a href="contact.html?service=fleet-maintenance" class="btn btn-industrial-primary">
+              <i class="bi bi-file-earmark-text me-2"></i> Inquire About Fleet Accounts
+            </a>
+          </div>
+
+          <div class="col-lg-6 order-lg-1">
+            <div class="rounded overflow-hidden border border-secondary shadow-lg">
+              <img src="assets/images/services/commercial-fleet-maintenance.jpg" alt="Commercial Fleet Trucks Lineup" class="img-fluid w-100" style="object-fit: cover;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         SECTION 6: SERVICE WORKFLOW & FREQUENTLY ASKED QUESTIONS
+         General service questions & appointment expectations
+         ======================================================================== -->
+    <section class="section-py bg-subtle-theme border-top border-secondary">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tagline"><i class="bi bi-question-diamond"></i> Frequently Asked Questions</span>
+          <h2 class="section-title">Diesel Service & Workshop FAQs</h2>
+          <p class="section-description mx-auto">Transparent answers to common questions about our repair and tuning procedures.</p>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-9">
+            <div class="accordion accordion-industrial" id="generalServicesAccordion">
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="genFaqHead1">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#genFaqCol1" aria-expanded="true" aria-controls="genFaqCol1">
+                    How long does a comprehensive diesel diagnostic scan take?
+                  </button>
+                </h3>
+                <div id="genFaqCol1" class="accordion-collapse collapse show" aria-labelledby="genFaqHead1" data-bs-parent="#generalServicesAccordion">
+                  <div class="accordion-body">
+                    A standard computerized diagnostic evaluation typically takes between 1.5 to 3 hours. This includes connecting OEM-subscribed scan tools (Ford FDRS, Cummins INSITE, GM GDS2), capturing live PID data streams, recording cylinder contribution balance rates, checking high-pressure fuel rail leak-down, and smoke-testing the charge-air induction system for boost leaks.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="genFaqHead2">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#genFaqCol2" aria-expanded="false" aria-controls="genFaqCol2">
+                    What warranty is included with major engine and transmission repairs?
+                  </button>
+                </h3>
+                <div id="genFaqCol2" class="accordion-collapse collapse" aria-labelledby="genFaqHead2" data-bs-parent="#generalServicesAccordion">
+                  <div class="accordion-body">
+                    We back all qualifying long-block engine overhauls, built heavy-duty transmissions, and OEM-reconditioned fuel injection assemblies with a written 2-Year / 24,000-Mile Limited Powertrain Warranty covering both parts and labor. Commercial fleet contracts receive customized fleet-specific warranty terms.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="genFaqHead3">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#genFaqCol3" aria-expanded="false" aria-controls="genFaqCol3">
+                    Can I wait in your customer lounge while my truck is serviced?
+                  </button>
+                </h3>
+                <div id="genFaqCol3" class="accordion-collapse collapse" aria-labelledby="genFaqHead3" data-bs-parent="#generalServicesAccordion">
+                  <div class="accordion-body">
+                    Yes! For routine preventive maintenance (PM) services and standard diagnostic scans, customers can relax in our modern lounge equipped with high-speed Wi-Fi, work desks, complimentary refreshments, and a view into Bay 1. For multi-day engine rebuilds or compound turbo builds, we provide daily digital photo updates directly via text or email.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="genFaqHead4">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#genFaqCol4" aria-expanded="false" aria-controls="genFaqCol4">
+                    Do you provide emergency heavy commercial towing?
+                  </button>
+                </h3>
+                <div id="genFaqCol4" class="accordion-collapse collapse" aria-labelledby="genFaqHead4" data-bs-parent="#generalServicesAccordion">
+                  <div class="accordion-body">
+                    Yes. We partner with specialized commercial heavy-wrecker towing companies capable of transporting loaded Class 3 through Class 8 trucks, goosenecks, and commercial trailers directly to our secure, fenced yard 24 hours a day, 7 days a week.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         SECTION 7: BOOKING CONSULTATION CTA
+         Direct action prompt to book any service
+         ======================================================================== -->
+    <section class="section-py bg-secondary-theme border-top border-secondary text-center">
+      <div class="container">
+        <div class="py-4" style="max-width: 800px; margin: 0 auto;">
+          <span class="section-tagline"><i class="bi bi-calendar-check"></i> Book With Confidence</span>
+          <h2 class="display-6 font-heading mb-3">Ready to Schedule Your Diesel Truck Service?</h2>
+          <p class="lead text-secondary mb-4" style="font-size: 1.15rem;">
+            Whether you have a specific symptom or need a full multi-point pre-trip inspection, lock in your diagnostic slot with our master certified technicians.
+          </p>
+          <div class="d-flex flex-wrap justify-content-center gap-3">
+            <button type="button" class="btn btn-industrial-primary btn-industrial-lg btn-book-service" data-bs-toggle="modal" data-bs-target="#serviceBookingModal">
+              <i class="bi bi-calendar-check me-2"></i> Book Service Appointment
+            </button>
+            <a href="pricing.html" class="btn btn-industrial-secondary btn-industrial-lg">
+              <i class="bi bi-calculator me-2"></i> View Pricing Guide
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6 footer-col">
+          <div class="d-flex align-items-center gap-2 mb-3">
+            <div class="brand-mark" style="width: 36px; height: 36px; font-size: 1.2rem;">T</div>
+            <span class="brand-name" style="font-size: 1.3rem;">TITAN <span>DIESEL</span></span>
+          </div>
+          <p class="small text-secondary mb-3">
+            Titan Diesel Works delivers technical heavy-duty diesel diagnostics, engine overhauls, turbo systems, and commercial fleet maintenance.
+          </p>
+          <div class="d-flex align-items-center gap-2">
+            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" class="btn-icon-square" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" class="btn-icon-square" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" class="btn-icon-square" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" class="btn-icon-square" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-6 footer-col">
+          <h5 class="footer-title">Services</h5>
+          <ul class="footer-links">
+            <li><a href="service-details.html?id=engine-diagnostics"><i class="bi bi-chevron-right text-accent"></i> Diagnostics</a></li>
+            <li><a href="service-details.html?id=engine-rebuild"><i class="bi bi-chevron-right text-accent"></i> Engine Rebuilds</a></li>
+            <li><a href="service-details.html?id=turbocharger-upgrades"><i class="bi bi-chevron-right text-accent"></i> Turbo Upgrades</a></li>
+            <li><a href="service-details.html?id=fuel-injection"><i class="bi bi-chevron-right text-accent"></i> Fuel Systems</a></li>
+            <li><a href="service-details.html?id=transmission-drivetrain"><i class="bi bi-chevron-right text-accent"></i> Transmissions</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-6 footer-col">
+          <h5 class="footer-title">Navigation</h5>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="bi bi-chevron-right text-accent"></i> Home</a></li>
+            <li><a href="about.html"><i class="bi bi-chevron-right text-accent"></i> About Us</a></li>
+            <li><a href="services.html"><i class="bi bi-chevron-right text-accent"></i> Services</a></li>
+            <li><a href="pricing.html"><i class="bi bi-chevron-right text-accent"></i> Pricing Guide</a></li>
+            <li><a href="blog.html"><i class="bi bi-chevron-right text-accent"></i> Tech Journal</a></li>
+            <li><a href="contact.html"><i class="bi bi-chevron-right text-accent"></i> Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-6 footer-col">
+          <h5 class="footer-title">Workshop Bay</h5>
+          <p class="small text-secondary mb-2">
+            <i class="bi bi-geo-alt-fill text-accent me-2"></i> 1044 Industrial Parkway, Bay 4, Heavy District
+          </p>
+          <p class="small text-secondary mb-2">
+            <i class="bi bi-telephone-fill text-accent me-2"></i> (555) 123-4567 | Dispatch: (555) 987-6543
+          </p>
+          <div class="p-2 rounded bg-subtle border border-secondary mt-3">
+            <span class="d-block small text-muted font-heading text-uppercase">Operating Hours</span>
+            <span class="small text-primary-theme d-block">Mon–Fri: 7:00 AM – 6:00 PM | Sat: 8:00 AM – 2:00 PM</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom d-flex flex-wrap justify-content-between align-items-center gap-2">
+        <div>
+          &copy; <span class="current-year">2026</span> Titan Diesel Works. Commercial Demonstration Template.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/rtl.js"></script>
+  <script src="assets/js/navigation.js"></script>
+  <script src="assets/js/data/services-data.js"></script>
+  <script src="assets/js/services.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="assets/images/branding/titan-diesel-favicon.svg">
+  <title>Performance & Fleet Specialist | Titan Diesel Works</title>
+  <meta name="description" content="Engineered for extreme torque, heavy towing endurance, and commercial fleet uptime. SuperFlow chassis dyno tuning, compound turbos, and bulletproof drivetrains.">
+  <meta name="keywords" content="diesel performance, compound turbos, chassis dyno tuning, commercial fleet uptime, diesel torque, built Allison transmission, Cummins tuning">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Titan Diesel Works | Diesel Performance & Commercial Fleet Specialist">
+  <meta property="og:description" content="Engineered for high-output torque, compound turbo systems, and guaranteed fleet uptime solutions.">
+  <meta property="og:image" content="assets/images/hero/hero-home-2.jpg">
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Oswald:wght@500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <!-- Custom Stylesheets -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <nav class="navbar navbar-expand-lg navbar-dark py-3">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img class="brand-mark" src="assets/images/branding/titan-diesel-mark.svg" alt="" width="42" height="42">
+          <div class="brand-text">
+            <span class="brand-name">TITAN <span>DIESEL</span></span>
+            <span class="brand-sub">PERFORMANCE & FLEET DIVISION</span>
+          </div>
+        </a>
+
+        <div class="d-flex align-items-center gap-2 order-lg-3">
+          <div class="nav-controls">
+            <button type="button" class="control-btn theme-toggle-btn" aria-label="Toggle Theme" title="Switch Theme">
+              <i class="bi bi-sun-fill"></i>
+            </button>
+            <button type="button" class="control-btn rtl-toggle-btn" aria-label="Toggle Layout Direction" title="Toggle RTL">
+              <span class="btn-label font-mono fw-bold" style="font-size: 0.75rem;">RTL</span>
+            </button>
+          </div>
+          <button type="button" class="btn btn-industrial-primary btn-industrial-sm d-none d-lg-inline-flex ms-2" data-bs-toggle="modal" data-bs-target="#dynoBookingModal">
+            <i class="bi bi-lightning-charge me-1"></i> Book Dyno Session
+          </button>
+          <button class="navbar-toggler border-secondary ms-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTitanNav" aria-controls="navbarTitanNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+
+        <div class="collapse navbar-collapse order-lg-2" id="navbarTitanNav">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Home <i class="bi bi-chevron-down nav-chevron ms-1"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="index.html"><i class="bi bi-wrench me-2 text-accent"></i> Home 1: Heavy Diesel Landing</a></li>
+                <li><a class="dropdown-item active" href="home-2.html"><i class="bi bi-speedometer2 me-2 text-accent"></i> Home 2: Performance & Fleet</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing Guide</a></li>
+            <li class="nav-item"><a class="nav-link" href="blog.html">Tech Journal</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+          </ul>
+          <div class="mobile-nav-booking d-lg-none">
+            <button type="button" class="btn btn-industrial-primary" data-bs-toggle="modal" data-bs-target="#dynoBookingModal">
+              <i class="bi bi-lightning-charge me-2"></i> Book Dyno Session
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ========================================================================
+         SECTION 1: PERFORMANCE HERO (TECHNICAL EDITORIAL LAYOUT)
+         Split high-output layout, dyno meters, live telemetry badges
+         ======================================================================== -->
+    <section class="hero-section-2">
+      <img src="assets/images/hero/hero-home-2.jpg" alt="Titan Diesel High-Output Performance Dyno Cell" class="hero-bg-img">
+      <div class="hero-bg-overlay"></div>
+      <div class="container hero-content">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-7">
+            <span class="hero-editorial-badge"><i class="bi bi-fire me-1"></i> High-Output Engineering</span>
+            <h1 class="display-3 font-heading mb-3">Tuned for Pure Torque. <span class="text-accent">Engineered for Uptime.</span></h1>
+            <p class="lead text-secondary mb-4" style="font-size: 1.15rem; max-width: 620px;">
+              We engineer custom compound turbochargers, built heavy-duty transmissions, and high-pressure fuel systems that withstand the punishing demands of 35,000-lb hot-shot trailers and commercial fleets.
+            </p>
+            <div class="d-flex flex-wrap gap-3 mb-4">
+              <button type="button" class="btn btn-industrial-primary btn-industrial-lg" data-bs-toggle="modal" data-bs-target="#dynoBookingModal">
+                <i class="bi bi-speedometer2 me-2"></i> Book Dyno Consultation
+              </button>
+              <a href="projects.html" class="btn btn-industrial-secondary btn-industrial-lg">
+                <i class="bi bi-folder-check me-2"></i> View Verified Builds
+              </a>
+            </div>
+            <div class="d-flex flex-wrap gap-3 font-mono text-muted small">
+              <span><i class="bi bi-check2 text-accent"></i> SuperFlow Chassis Dyno</span>
+              <span>•</span>
+              <span><i class="bi bi-check2 text-accent"></i> Switch-on-the-Fly Profiles</span>
+              <span>•</span>
+              <span><i class="bi bi-check2 text-accent"></i> Commercial Uptime SLAs</span>
+            </div>
+          </div>
+
+          <div class="col-lg-5">
+            <!-- Dyno Telemetry Live Card -->
+            <div class="dyno-spec-card shadow-lg">
+              <div class="d-flex justify-content-between align-items-center mb-3 pb-2 border-bottom border-secondary">
+                <span class="badge bg-secondary border border-secondary text-accent font-mono">LIVE DYNO METRICS</span>
+                <span class="small font-mono text-muted">CHASSIS CELL #1</span>
+              </div>
+              
+              <div class="mb-4">
+                <div class="small text-muted font-heading text-uppercase mb-1">RECORDED PEAK REAR-WHEEL TORQUE</div>
+                <div class="dyno-meter">
+                  <span class="dyno-val">1,620</span>
+                  <span class="dyno-unit">LB-FT @ 1,950 RPM</span>
+                </div>
+              </div>
+
+              <div class="row g-3 mb-3">
+                <div class="col-6">
+                  <div class="p-3 rounded bg-subtle border border-secondary">
+                    <span class="small text-muted font-heading d-block mb-1">WHEEL HORSEPOWER</span>
+                    <span class="h3 font-heading text-primary-theme mb-0">848 WHP</span>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="p-3 rounded bg-subtle border border-secondary">
+                    <span class="small text-muted font-heading d-block mb-1">COMPOUND BOOST</span>
+                    <span class="h3 font-heading text-accent mb-0">68 PSI</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="p-3 rounded bg-subtle border border-secondary">
+                <div class="d-flex justify-content-between text-muted small mb-1">
+                  <span>Full Load EGT</span>
+                  <span class="text-success font-mono">1,180°F (Within Safe Thermal Limit)</span>
+                </div>
+                <div class="progress" style="height: 6px; background-color: var(--border-color);">
+                  <div class="progress-bar bg-warning" role="progressbar" style="width: 72%;" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         SECTION 2: PERFORMANCE CAPABILITIES & DYNO SPECIFICATIONS
+         Technical specification strip with dyno cell telemetry
+         ======================================================================== -->
+    <section class="section-py bg-subtle-theme border-top border-bottom border-secondary">
+      <div class="container">
+        <div class="row g-4 text-center">
+          <div class="col-lg-3 col-6">
+            <div class="p-4 rounded border border-secondary bg-surface h-100">
+              <i class="bi bi-speedometer fs-1 text-accent mb-2 d-block"></i>
+              <div class="h2 font-heading mb-1">2,500+</div>
+              <span class="small text-muted font-heading text-uppercase">LB-FT Dyno Capacity</span>
+            </div>
+          </div>
+          <div class="col-lg-3 col-6">
+            <div class="p-4 rounded border border-secondary bg-surface h-100">
+              <i class="bi bi-fan fs-1 text-accent mb-2 d-block"></i>
+              <div class="h2 font-heading mb-1">75,000 CFM</div>
+              <span class="small text-muted font-heading text-uppercase">High-Velocity Air Cell</span>
+            </div>
+          </div>
+          <div class="col-lg-3 col-6">
+            <div class="p-4 rounded border border-secondary bg-surface h-100">
+              <i class="bi bi-cpu fs-1 text-accent mb-2 d-block"></i>
+              <div class="h2 font-heading mb-1">5-Position</div>
+              <span class="small text-muted font-heading text-uppercase">SOTF Tow & Race Maps</span>
+            </div>
+          </div>
+          <div class="col-lg-3 col-6">
+            <div class="p-4 rounded border border-secondary bg-surface h-100">
+              <i class="bi bi-clock-history fs-1 text-accent mb-2 d-block"></i>
+              <div class="h2 font-heading mb-1">24-Hour</div>
+              <span class="small text-muted font-heading text-uppercase">Commercial Fleet SLA</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         SECTION 3: PERFORMANCE ENGINEERING & DYNO ARCHITECTURE
+         Distinct technical layout: 4 Powertrain disciplines + live telemetry console
+         ======================================================================== -->
+    <section class="section-py bg-primary-theme" id="performanceEngineering">
+      <div class="container">
+        <div class="d-flex flex-wrap justify-content-between align-items-end mb-5">
+          <div>
+            <span class="section-tagline"><i class="bi bi-cpu-fill"></i> Performance Engineering Division</span>
+            <h2 class="section-title mb-0">High-Output Powertrain Architecture</h2>
+            <p class="text-secondary mt-2 mb-0" style="max-width: 680px;">
+              Engineered airflow, fuel hydraulics, and drivetrain clamping designed for 800+ HP towing loads with sub-1,200°F sustained exhaust gas temperatures.
+            </p>
+          </div>
+          <button type="button" class="btn btn-industrial-primary btn-industrial-sm mt-3 mt-md-0" data-bs-toggle="modal" data-bs-target="#dynoBookingModal">
+            <i class="bi bi-speedometer2 me-1"></i> Book Dyno Session <i class="bi bi-arrow-right ms-1"></i>
+          </button>
+        </div>
+
+        <div class="row g-4 align-items-stretch">
+          <!-- Left: 4 Engineering Pillars -->
+          <div class="col-lg-7">
+            <div class="row g-3 h-100">
+              <!-- Pillar 1: Compound Turbos -->
+              <div class="col-sm-6">
+                <div class="p-4 rounded border border-secondary bg-surface h-100 d-flex flex-column">
+                  <div class="d-flex align-items-center gap-2 mb-2">
+                    <div class="capability-icon text-accent fs-4" style="width: 36px; height: 36px; min-width: 36px;">
+                      <i class="bi bi-fan"></i>
+                    </div>
+                    <span class="badge bg-secondary border border-secondary text-accent font-mono">BOOST STAGING</span>
+                  </div>
+                  <h5 class="font-heading mb-2">Compound Twin Turbos</h5>
+                  <p class="small text-secondary mb-3 flex-grow-1">
+                    BorgWarner S362 SX-E over S475 atmospheric turbo setups. Rapid spool off idle with 68+ PSI boost and -250°F lower sustained towing EGTs.
+                  </p>
+                  <div class="d-flex flex-wrap gap-1 font-mono text-muted small mt-auto">
+                    <span class="spec-pill py-1 px-2" style="font-size: 0.75rem;">68 PSI Boost</span>
+                    <span class="spec-pill py-1 px-2 text-accent" style="font-size: 0.75rem;">Sub-1,200°F EGT</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Pillar 2: High-Pressure Fueling -->
+              <div class="col-sm-6">
+                <div class="p-4 rounded border border-secondary bg-surface h-100 d-flex flex-column">
+                  <div class="d-flex align-items-center gap-2 mb-2">
+                    <div class="capability-icon text-accent fs-4" style="width: 36px; height: 36px; min-width: 36px;">
+                      <i class="bi bi-fuel-pump"></i>
+                    </div>
+                    <span class="badge bg-secondary border border-secondary text-accent font-mono">HYDRAULICS</span>
+                  </div>
+                  <h5 class="font-heading mb-2">High-Pressure CP3 Conversions</h5>
+                  <p class="small text-secondary mb-3 flex-grow-1">
+                    CP4 disaster prevention conversions to bulletproof CP3 stroke pumps, backed by FASS Titanium 165 GPH fuel-air de-aeration systems.
+                  </p>
+                  <div class="d-flex flex-wrap gap-1 font-mono text-muted small mt-auto">
+                    <span class="spec-pill py-1 px-2" style="font-size: 0.75rem;">30,000 PSI Rail</span>
+                    <span class="spec-pill py-1 px-2 text-accent" style="font-size: 0.75rem;">2-Micron Clean</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Pillar 3: Built Billet Transmissions -->
+              <div class="col-sm-6">
+                <div class="p-4 rounded border border-secondary bg-surface h-100 d-flex flex-column">
+                  <div class="d-flex align-items-center gap-2 mb-2">
+                    <div class="capability-icon text-accent fs-4" style="width: 36px; height: 36px; min-width: 36px;">
+                      <i class="bi bi-gear-wide-connected"></i>
+                    </div>
+                    <span class="badge bg-secondary border border-secondary text-accent font-mono">DRIVETRAIN</span>
+                  </div>
+                  <h5 class="font-heading mb-2">Billet Heavy-Haul Transmissions</h5>
+                  <p class="small text-secondary mb-3 flex-grow-1">
+                    Built Allison 1000/10-Speed, TorqShift, and 68RFE assemblies with triple-disc billet torque converters, billet input shafts, and GPZ frictions.
+                  </p>
+                  <div class="d-flex flex-wrap gap-1 font-mono text-muted small mt-auto">
+                    <span class="spec-pill py-1 px-2" style="font-size: 0.75rem;">1,800 LB-FT Rated</span>
+                    <span class="spec-pill py-1 px-2 text-accent" style="font-size: 0.75rem;">0% Converter Slip</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Pillar 4: SOTF ECM/TCM Dyno Tuning -->
+              <div class="col-sm-6">
+                <div class="p-4 rounded border border-secondary bg-surface h-100 d-flex flex-column">
+                  <div class="d-flex align-items-center gap-2 mb-2">
+                    <div class="capability-icon text-accent fs-4" style="width: 36px; height: 36px; min-width: 36px;">
+                      <i class="bi bi-cpu"></i>
+                    </div>
+                    <span class="badge bg-secondary border border-secondary text-accent font-mono">CALIBRATION</span>
+                  </div>
+                  <h5 class="font-heading mb-2">Custom SOTF Dyno Tuning</h5>
+                  <p class="small text-secondary mb-3 flex-grow-1">
+                    5-position switch-on-the-fly ECM mapping matched with transmission line pressure scaling. Calibrated clean for zero black smoke and maximum torque.
+                  </p>
+                  <div class="d-flex flex-wrap gap-1 font-mono text-muted small mt-auto">
+                    <span class="spec-pill py-1 px-2" style="font-size: 0.75rem;">5-Map SOTF</span>
+                    <span class="spec-pill py-1 px-2 text-accent" style="font-size: 0.75rem;">Clean-Burn Tow</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Live Chassis Dyno Engineering Console -->
+          <div class="col-lg-5">
+            <div class="p-4 p-md-5 rounded border border-secondary bg-surface shadow-lg h-100 d-flex flex-column justify-content-between">
+              <div>
+                <div class="d-flex justify-content-between align-items-center mb-3 pb-2 border-bottom border-secondary">
+                  <span class="badge bg-warning text-dark font-heading text-uppercase">Dyno Cell Lab Telemetry</span>
+                  <span class="small font-mono text-accent"><i class="bi bi-record-circle-fill text-danger me-1"></i> REAL-TIME</span>
+                </div>
+                
+                <h4 class="font-heading mb-2">Chassis Dynamometer Load Testing</h4>
+                <p class="small text-secondary mb-4">
+                  Every upgraded powertrain is strapped into our SuperFlow dual eddy-current chassis dyno to simulate heavy 6% mountain pass grades under full trailer load.
+                </p>
+
+                <div class="p-3 rounded bg-subtle border border-secondary mb-3">
+                  <div class="d-flex justify-content-between small text-muted mb-1 font-heading">
+                    <span>Sustained Exhaust Temp (EGT)</span>
+                    <span class="text-success font-mono">1,180°F (Safe &lt; 1,300°F)</span>
+                  </div>
+                  <div class="progress" style="height: 8px; background-color: var(--border-color);">
+                    <div class="progress-bar bg-warning" role="progressbar" style="width: 74%;"></div>
+                  </div>
+                </div>
+
+                <div class="p-3 rounded bg-subtle border border-secondary mb-3">
+                  <div class="d-flex justify-content-between small text-muted mb-1 font-heading">
+                    <span>Torque Converter Hydraulic Lockup</span>
+                    <span class="text-accent font-mono">100% Solid (0.0 RPM Slip)</span>
+                  </div>
+                  <div class="progress" style="height: 8px; background-color: var(--border-color);">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 100%;"></div>
+                  </div>
+                </div>
+
+                <div class="p-3 rounded bg-subtle border border-secondary mb-3">
+                  <div class="d-flex justify-content-between small text-muted mb-1 font-heading">
+                    <span>High-Pressure Common-Rail Delta</span>
+                    <span class="text-primary-theme font-mono">&lt; 0.5% Pressure Variance</span>
+                  </div>
+                  <div class="progress" style="height: 8px; background-color: var(--border-color);">
+                    <div class="progress-bar bg-info" role="progressbar" style="width: 96%;"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="pt-3 border-top border-secondary mt-3">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <span class="d-block small text-muted font-heading text-uppercase">SuperFlow Testing SLA</span>
+                    <span class="small font-mono text-accent">Dyno Sheet Included With Every Build</span>
+                  </div>
+                  <a href="projects.html" class="btn btn-industrial-secondary btn-industrial-sm">
+                    Build Gallery <i class="bi bi-arrow-right ms-1"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         SECTION 4: COMMERCIAL FLEET MAINTENANCE & UPTIME SOLUTIONS
+         Preventive programs, telematics integration, DOT certifications
+         ======================================================================== -->
+    <section class="section-py bg-subtle-theme">
+      <div class="container">
+        <div class="row align-items-stretch g-4 g-lg-5">
+          <div class="col-lg-6 d-flex flex-column justify-content-between">
+            <div>
+              <span class="section-tagline"><i class="bi bi-truck-front-fill"></i> Commercial Fleet Division</span>
+              <h2 class="display-6 font-heading mb-3">Maximize Fleet Uptime. <span class="text-accent">Minimize Cost-Per-Mile.</span></h2>
+              <div class="industrial-divider"></div>
+              <p class="text-secondary mb-4" style="font-size: 1.05rem; line-height: 1.8;">
+                When your revenue depends on wheels rolling, unscheduled roadside breakdowns destroy your bottom line. Titan's dedicated Commercial Fleet Program provides scheduled evening servicing, priority bay triage, and comprehensive DOT compliance.
+              </p>
+              <div class="row g-3 mb-4">
+                <div class="col-sm-6">
+                  <div class="p-3 rounded border border-secondary bg-surface h-100">
+                    <div class="d-flex align-items-center gap-2 mb-1">
+                      <i class="bi bi-moon-stars text-accent fs-5"></i>
+                      <h6 class="font-heading mb-0">Night Bay Servicing</h6>
+                    </div>
+                    <p class="small text-muted mb-0">Drop trucks off at 6:00 PM; pick them up fully serviced and inspected at 6:00 AM.</p>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="p-3 rounded border border-secondary bg-surface h-100">
+                    <div class="d-flex align-items-center gap-2 mb-1">
+                      <i class="bi bi-file-earmark-check text-accent fs-5"></i>
+                      <h6 class="font-heading mb-0">FMCSA Annual DOT</h6>
+                    </div>
+                    <p class="small text-muted mb-0">Certified safety inspections with official compliance decals and electronic records.</p>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="p-3 rounded border border-secondary bg-surface h-100">
+                    <div class="d-flex align-items-center gap-2 mb-1">
+                      <i class="bi bi-fire text-accent fs-5"></i>
+                      <h6 class="font-heading mb-0">DPF Kiln Baking</h6>
+                    </div>
+                    <p class="small text-muted mb-0">Pneumatic pulse cleaning and 1,100°F thermal baking to eliminate derate codes.</p>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="p-3 rounded border border-secondary bg-surface h-100">
+                    <div class="d-flex align-items-center gap-2 mb-1">
+                      <i class="bi bi-cash-stack text-accent fs-5"></i>
+                      <h6 class="font-heading mb-0">Centralized Billing</h6>
+                    </div>
+                    <p class="small text-muted mb-0">Monthly consolidated statements with volume parts discounts and warranty tracking.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <a href="contact.html?service=fleet-maintenance" class="btn btn-industrial-primary">
+                <i class="bi bi-telephone-outbound me-2"></i> Request Commercial Fleet Proposal
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-6 d-flex">
+            <div class="rounded overflow-hidden border border-secondary shadow-lg w-100 h-100" style="min-height: 440px;">
+              <img src="assets/images/services/commercial-fleet-maintenance.jpg" alt="Commercial Fleet Maintenance Lineup" class="w-100 h-100" style="object-fit: cover; object-position: center;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         SECTION 5: BEFORE & AFTER / DYNO-VERIFIED PROJECT SHOWCASE
+         3 High-Output case studies with distinct vehicles and telemetry
+         ======================================================================== -->
+    <section class="section-py bg-primary-theme">
+      <div class="container">
+        <div class="d-flex flex-wrap justify-content-between align-items-end mb-4">
+          <div>
+            <span class="section-tagline"><i class="bi bi-speedometer2"></i> Dyno-Verified Builds</span>
+            <h2 class="section-title mb-0">High-Output Case Studies</h2>
+          </div>
+          <a href="projects.html" class="btn btn-industrial-secondary btn-industrial-sm mt-3 mt-md-0">
+            All Case Studies <i class="bi bi-arrow-right ms-1"></i>
+          </a>
+        </div>
+
+        <div class="row g-4">
+          <!-- Build 1: Ram 3500 Compound -->
+          <div class="col-lg-4 col-md-6">
+            <div class="industrial-card">
+              <div class="card-img-wrapper">
+                <span class="card-badge">848 WHP / 1,620 LB-FT</span>
+                <img src="assets/images/projects/project-cummins-compound-turbo.jpg" alt="Ram 3500 Cummins Compound Build" loading="lazy">
+              </div>
+              <div class="industrial-card-body">
+                <div class="text-accent small font-heading text-uppercase mb-1">2019 Ram 3500 6.7L Cummins</div>
+                <h4 class="h5 mb-2">High-Altitude Extreme Tow Compound</h4>
+                <p class="small text-secondary mb-3">Custom S362 SX-E over S475 compound twin turbos, CP3 conversion, and 5-position switch-on-the-fly custom tow tuning.</p>
+                <div class="spec-list-item py-1">
+                  <span class="spec-label small">Baseline Power:</span>
+                  <span class="spec-value small">410 WHP / 880 LB-FT</span>
+                </div>
+                <div class="spec-list-item py-1">
+                  <span class="spec-label small">Final Dyno:</span>
+                  <span class="spec-value small text-accent">848 WHP / 1,620 LB-FT</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Build 2: Cat C15 Peterbilt -->
+          <div class="col-lg-4 col-md-6">
+            <div class="industrial-card">
+              <div class="card-img-wrapper">
+                <span class="card-badge">2,050 LB-FT Heavy Haul</span>
+                <img src="assets/images/projects/project-cat-c15-peterbilt.jpg" alt="Peterbilt 389 Cat C15 Heavy Haul" loading="lazy">
+              </div>
+              <div class="industrial-card-body">
+                <div class="text-accent small font-heading text-uppercase mb-1">Peterbilt 389 Extended Hood</div>
+                <h4 class="h5 mb-2">Cat C15 6NZ In-Frame Long Block</h4>
+                <p class="small text-secondary mb-3">Monotherm forged steel pistons, custom counterbore cutting, Cat twin turbos, and 120,000-lb gross haul capability.</p>
+                <div class="spec-list-item py-1">
+                  <span class="spec-label small">Original Mileage:</span>
+                  <span class="spec-value small">940,000 Miles</span>
+                </div>
+                <div class="spec-list-item py-1">
+                  <span class="spec-label small">Oil Consumption:</span>
+                  <span class="spec-value small text-success">Zero Burn / 15k Interval</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Build 3: Duramax Allison -->
+          <div class="col-lg-4 col-md-6">
+            <div class="industrial-card">
+              <div class="card-img-wrapper">
+                <span class="card-badge">1,800 LB-FT Billet Trans</span>
+                <img src="assets/images/projects/project-duramax-allison.jpg" alt="Chevy Silverado 3500HD Allison Build" loading="lazy">
+              </div>
+              <div class="industrial-card-body">
+                <div class="text-accent small font-heading text-uppercase mb-1">2022 Chevy Silverado 3500HD</div>
+                <h4 class="h5 mb-2">Allison 10-Speed Billet Drivetrain</h4>
+                <p class="small text-secondary mb-3">Triple-disc low-stall billet torque converter, GPZ extreme friction modules, billet input shaft, and auxiliary thermal cooling pack.</p>
+                <div class="spec-list-item py-1">
+                  <span class="spec-label small">Operating Temp:</span>
+                  <span class="spec-value small text-success">-40°F Cooler Under Tow</span>
+                </div>
+                <div class="spec-list-item py-1">
+                  <span class="spec-label small">Converter Slip:</span>
+                  <span class="spec-value small text-accent">0 RPM (Locked)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         SECTION 6: TECHNICAL WORKSHOP STANDARDS & CLIENT FEEDBACK
+         Dyno verification, clean room standards, and fleet manager testimonials
+         ======================================================================== -->
+    <section class="section-py bg-subtle-theme">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tagline"><i class="bi bi-award-fill"></i> Commercial Confidence</span>
+          <h2 class="section-title">Built On Engineering Rigor</h2>
+          <p class="section-description mx-auto">Real fleet managers and diesel hot-shot operators trust Titan for uncompromised reliability.</p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <div class="p-4 rounded border border-secondary bg-surface h-100">
+              <div class="capability-icon text-accent fs-3 mb-3">
+                <i class="bi bi-droplet-half"></i>
+              </div>
+              <h5 class="font-heading mb-2">Clean-Room Injection Lab</h5>
+              <p class="small text-secondary mb-3">Our dedicated climate-controlled clean room features HEPA filtration and Bosch EPS high-pressure test benches to rebuild common rail injectors to 2-micron tolerances.</p>
+              <span class="badge bg-secondary border border-secondary text-accent font-mono">ISO 14644 Lab</span>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="p-4 rounded border border-secondary bg-surface h-100">
+              <div class="capability-icon text-accent fs-3 mb-3">
+                <i class="bi bi-speedometer2"></i>
+              </div>
+              <h5 class="font-heading mb-2">SuperFlow Dyno Validation</h5>
+              <p class="small text-secondary mb-3">Every tuned build and heavy long-block is strapped down to our SuperFlow dual eddy-current dynamometer for controlled heat-cycle break-in and boost verification before release.</p>
+              <span class="badge bg-secondary border border-secondary text-accent font-mono">2,500 LB-FT Absorb</span>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="p-4 rounded border border-secondary bg-surface h-100">
+              <div class="capability-icon text-accent fs-3 mb-3">
+                <i class="bi bi-shield-lock-fill"></i>
+              </div>
+              <h5 class="font-heading mb-2">Titan Commercial Warranty</h5>
+              <p class="small text-secondary mb-3">We back our performance components, long-block rebuilds, and commercial fleet services with a 2-Year / 24,000-Mile Nationwide Powertrain Limited Warranty.</p>
+              <span class="badge bg-secondary border border-secondary text-accent font-mono">Written Assurance</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Commercial Fleet Manager Reviews -->
+        <div class="row g-4 mt-2">
+          <div class="col-md-6">
+            <div class="p-4 rounded border border-secondary bg-surface h-100 d-flex flex-column">
+              <div class="d-flex align-items-center gap-1 text-accent mb-2">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                <span class="small font-mono text-muted ms-2">Verified Commercial Account</span>
+              </div>
+              <p class="small text-secondary mb-3 fst-italic flex-grow-1">
+                "Titan transformed our 14-truck Ram 3500 hotshot fleet. We pull 35,000-lb gooseneck loads across the Rockies. Since switching to their compound turbos and evening drop-off service, we’ve logged 480,000 combined miles with zero thermal derates."
+              </p>
+              <div class="d-flex align-items-center gap-3 pt-2 border-top border-secondary">
+                <img src="assets/images/testimonials/dave-miller.jpg" alt="Dave Miller" class="rounded-circle border border-secondary" width="48" height="48" style="object-fit: cover;">
+                <div>
+                  <h6 class="font-heading mb-0">Dave Miller</h6>
+                  <span class="small text-muted font-heading text-uppercase">Owner, High Country Hotshot LLC</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="p-4 rounded border border-secondary bg-surface h-100 d-flex flex-column">
+              <div class="d-flex align-items-center gap-1 text-accent mb-2">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                <span class="small font-mono text-muted ms-2">Verified Logistics Director</span>
+              </div>
+              <p class="small text-secondary mb-3 fst-italic flex-grow-1">
+                "The evening drop-off and 6:00 AM turnaround is game-changing for our Peterbilt 389 fleet. Titan handles our annual DOT inspections and DPF kiln baking with zero delays. Uptime across our line-haul units is up 18% year-over-year."
+              </p>
+              <div class="d-flex align-items-center gap-3 pt-2 border-top border-secondary">
+                <img src="assets/images/testimonials/marcus-vance.jpg" alt="Marcus Vance" class="rounded-circle border border-secondary" width="48" height="48" style="object-fit: cover;">
+                <div>
+                  <h6 class="font-heading mb-0">Marcus Vance</h6>
+                  <span class="small text-muted font-heading text-uppercase">Logistics Fleet Director, Western Apex Freight</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         SECTION 7: CONSULTATION & DYNO BOOKING CTA
+         Direct high-output consultation and fleet proposal prompt
+         ======================================================================== -->
+    <section class="section-py bg-secondary-theme border-top border-secondary text-center">
+      <div class="container">
+        <div class="py-4" style="max-width: 800px; margin: 0 auto;">
+          <span class="section-tagline"><i class="bi bi-fire"></i> Unlock Your Powertrain's Full Potential</span>
+          <h2 class="display-5 font-heading mb-3">Schedule Your Performance or Fleet Consultation</h2>
+          <p class="lead text-secondary mb-4" style="font-size: 1.15rem;">
+            Discuss your horsepower target, heavy towing thermals, or commercial fleet uptime schedule with our certified diesel engineers.
+          </p>
+          <div class="d-flex flex-wrap justify-content-center gap-3">
+            <button type="button" class="btn btn-industrial-primary btn-industrial-lg" data-bs-toggle="modal" data-bs-target="#dynoBookingModal">
+              <i class="bi bi-speedometer2 me-2"></i> Book Dyno Session
+            </button>
+            <a href="contact.html?service=fleet-maintenance" class="btn btn-industrial-secondary btn-industrial-lg">
+              <i class="bi bi-truck me-2"></i> Request Fleet Account
+            </a>
+          </div>
+          <div class="mt-4 text-muted small">
+            <i class="bi bi-telephone-fill text-accent me-1"></i> Commercial Hotline: (555) 123-4567 • Mon–Fri: 7:00 AM – 6:00 PM
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ========================================================================
+         BOOK DYNO SESSION POPUP MODAL (CENTERED POPUP WITH VALIDATION)
+         ======================================================================== -->
+    <div class="modal fade" id="dynoBookingModal" tabindex="-1" aria-labelledby="dynoBookingModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content shadow-lg border-secondary">
+          <div class="modal-header booking-modal-header bg-subtle border-secondary px-4 py-3">
+            <div class="booking-modal-heading d-flex align-items-center gap-2">
+              <img class="brand-mark" src="assets/images/branding/titan-diesel-mark.svg" alt="Titan Diesel logo" width="32" height="32">
+              <div class="booking-modal-copy">
+                <h5 class="modal-title font-heading mb-0" id="dynoBookingModalLabel">Book SuperFlow Dyno Session</h5>
+                <span class="small font-mono text-muted" style="font-size: 0.78rem;">Chassis Dynamometer Cell #1 &bull; Up to 2,500 LB-FT</span>
+              </div>
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body p-4 p-md-5">
+            <!-- Dyno Form Container -->
+            <div id="dynoFormContainer">
+              <div class="p-3 rounded bg-subtle border border-secondary mb-4">
+                <div class="d-flex align-items-center justify-content-between flex-wrap gap-2">
+                  <span class="badge bg-secondary border border-secondary text-accent font-mono">
+                    <i class="bi bi-activity me-1"></i> Live Cell Status: Active
+                  </span>
+                  <span class="small font-mono text-secondary">
+                    <i class="bi bi-fan me-1"></i> 75,000 CFM Airflow &bull; Real-Time EGT Telemetry
+                  </span>
+                </div>
+              </div>
+
+              <form id="dynoBookingForm" novalidate>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label class="form-label font-heading text-uppercase small" for="dynoFullName">Full Name *</label>
+                    <input type="text" id="dynoFullName" name="dyno_name" class="form-control" placeholder="e.g. Cole Vance" required>
+                    <div class="form-feedback-error"></div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <label class="form-label font-heading text-uppercase small" for="dynoEmail">Email Address *</label>
+                    <input type="email" id="dynoEmail" name="dyno_email" class="form-control" placeholder="e.g. cole@vancehauling.demo" required>
+                    <div class="form-feedback-error"></div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <label class="form-label font-heading text-uppercase small" for="dynoPhone">Phone Number *</label>
+                    <input type="tel" id="dynoPhone" name="dyno_phone" class="form-control" placeholder="e.g. (555) 345-6789" required>
+                    <div class="form-feedback-error"></div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <label class="form-label font-heading text-uppercase small" for="dynoVehicle">Vehicle Year, Model &amp; Engine *</label>
+                    <input type="text" id="dynoVehicle" name="dyno_vehicle" class="form-control" placeholder="e.g. 2022 Ram 3500, 6.7L" required>
+                    <div class="form-feedback-error"></div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <label class="form-label font-heading text-uppercase small" for="dynoPackage">Dyno Session Package *</label>
+                    <select id="dynoPackage" name="dyno_package" class="form-select" required>
+                      <option value="">-- Choose Dyno Package --</option>
+                      <option value="Baseline Power Verification (3 Pulls) - $195">3-Pull Baseline ($195)</option>
+                      <option value="SOTF Custom Tow & Street ECM Calibration - $650">Tow / Street Tune ($650)</option>
+                      <option value="Compound Turbo & Fuel Injection Dial-In - $1,150">Turbo Dial-In ($1,150)</option>
+                      <option value="Heavy Tow Loaded Heat-Cycle Verification - $480">Heavy Tow Heat-Cycle ($480)</option>
+                      <option value="Competition / Sled Pull Max-Effort Tuning - $1,400">Competition Tune ($1,400)</option>
+                    </select>
+                    <div class="form-feedback-error"></div>
+                  </div>
+
+                  <div class="col-md-3">
+                    <label class="form-label font-heading text-uppercase small" for="dynoDate">Preferred Date *</label>
+                    <input type="date" id="dynoDate" name="dyno_date" class="form-control" required>
+                    <div class="form-feedback-error"></div>
+                  </div>
+
+                  <div class="col-md-3">
+                    <label class="form-label font-heading text-uppercase small" for="dynoTime">Time Slot *</label>
+                    <select id="dynoTime" name="dyno_time" class="form-select" required>
+                      <option value="Morning (8:00 AM)">Morning (8:00 AM)</option>
+                      <option value="Midday (11:30 AM)">Midday (11:30 AM)</option>
+                      <option value="Afternoon (2:30 PM)">Afternoon (2:30 PM)</option>
+                      <option value="Evening Slot (5:30 PM)">Evening Slot (5:30 PM)</option>
+                    </select>
+                    <div class="form-feedback-error"></div>
+                  </div>
+
+                  <div class="col-12">
+                    <label class="form-label font-heading text-uppercase small" for="dynoMods">Drivetrain &amp; Modifications (Optional)</label>
+                    <input type="text" id="dynoMods" name="dyno_mods" class="form-control" placeholder="e.g. Built Allison transmission, S366 turbo, 60% injectors, stock converter...">
+                  </div>
+
+                  <div class="col-12">
+                    <div class="form-check p-3 rounded bg-subtle border border-secondary">
+                      <input class="form-check-input ms-0 me-2" type="checkbox" id="dynoConsentCheck" name="dyno_consent" required>
+                      <label class="form-check-label small text-secondary" for="dynoConsentCheck">
+                        <strong>Pre-Tie-Down Safety Agreement:</strong> I confirm vehicle fluid levels are topped off, tires have adequate tread rated for roller speeds, and drivetrain has no critical oil leaks.
+                      </label>
+                      <div class="form-feedback-error mt-1"></div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 mt-4 text-center">
+                    <button type="submit" class="btn btn-industrial-primary btn-industrial-lg w-100" id="dynoSubmitBtn">
+                      <i class="bi bi-speedometer2 me-2"></i> Confirm Dyno Session Reservation
+                    </button>
+                    <span class="text-muted small font-mono d-block mt-2" style="font-size: 0.75rem;">
+                      <i class="bi bi-shield-check text-accent me-1"></i> Guaranteed bay lock &bull; Live telemetry graphs included
+                    </span>
+                  </div>
+                </div>
+              </form>
+            </div>
+
+            <!-- Centered Dyno Confirmation Receipt -->
+            <div id="dynoSuccessContainer" class="d-none text-center py-3">
+              <div class="mb-3">
+                <i class="bi bi-check-circle-fill text-accent" style="font-size: 4rem;"></i>
+              </div>
+              <span class="badge bg-secondary border border-secondary text-accent font-mono px-3 py-1 mb-2">
+                CHASSIS CELL #1 RESERVED
+              </span>
+              <h3 class="font-heading mb-2">Dyno Session Confirmed!</h3>
+              <p class="text-secondary small mx-auto mb-4" style="max-width: 500px;">
+                Your session has been logged in the Titan SuperFlow dispatch console. Our calibration engineer will review your modifications before tie-down.
+              </p>
+
+              <div class="p-4 rounded bg-subtle border border-secondary text-start mx-auto mb-4" style="max-width: 580px;">
+                <div class="d-flex justify-content-between align-items-center border-bottom border-secondary pb-2 mb-3">
+                  <span class="font-heading text-uppercase text-muted small">Reservation Code:</span>
+                  <strong class="font-mono text-accent fs-5" id="receiptRefCode">#TDW-DYNO-8492</strong>
+                </div>
+                <div class="row g-2 small">
+                  <div class="col-sm-6">
+                    <span class="text-muted d-block">Client:</span>
+                    <strong class="text-primary-theme" id="receiptName">Brad Thornton</strong>
+                  </div>
+                  <div class="col-sm-6">
+                    <span class="text-muted d-block">Vehicle:</span>
+                    <strong class="text-primary-theme" id="receiptVehicle">2021 Ram 3500 6.7L</strong>
+                  </div>
+                  <div class="col-12 pt-2 border-top border-secondary">
+                    <span class="text-muted d-block">Package:</span>
+                    <strong class="text-accent" id="receiptPackage">SOTF Custom Tow &amp; Street ECM Calibration ($650)</strong>
+                  </div>
+                  <div class="col-sm-6 pt-2 border-top border-secondary">
+                    <span class="text-muted d-block">Reserved Slot:</span>
+                    <strong class="text-primary-theme" id="receiptSlot">Oct 24, 2026 at Morning (8:00 AM)</strong>
+                  </div>
+                  <div class="col-sm-6 pt-2 border-top border-secondary">
+                    <span class="text-muted d-block">Location:</span>
+                    <strong class="text-primary-theme">Dyno Cell 1 (Bay 4)</strong>
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-flex flex-wrap justify-content-center gap-3">
+                <button type="button" class="btn btn-industrial-primary" data-bs-dismiss="modal">
+                  <i class="bi bi-check2-circle me-1"></i> Done &amp; Close
+                </button>
+                <button type="button" class="btn btn-industrial-secondary" id="dynoResetBtn">
+                  <i class="bi bi-arrow-clockwise me-1"></i> Book Another Session
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6 footer-col">
+          <div class="d-flex align-items-center gap-2 mb-3">
+            <div class="brand-mark" style="width: 36px; height: 36px; font-size: 1.2rem;">T</div>
+            <span class="brand-name" style="font-size: 1.3rem;">TITAN <span>DIESEL</span></span>
+          </div>
+          <p class="small text-secondary mb-3">
+            Titan Diesel Works delivers technical heavy-duty diesel diagnostics, engine overhauls, turbo systems, and commercial fleet maintenance.
+          </p>
+          <div class="d-flex align-items-center gap-2">
+            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" class="btn-icon-square" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" class="btn-icon-square" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" class="btn-icon-square" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" class="btn-icon-square" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-6 footer-col">
+          <h5 class="footer-title">Services</h5>
+          <ul class="footer-links">
+            <li><a href="service-details.html?id=engine-diagnostics"><i class="bi bi-chevron-right text-accent"></i> Diagnostics</a></li>
+            <li><a href="service-details.html?id=engine-rebuild"><i class="bi bi-chevron-right text-accent"></i> Engine Rebuilds</a></li>
+            <li><a href="service-details.html?id=turbocharger-upgrades"><i class="bi bi-chevron-right text-accent"></i> Turbo Upgrades</a></li>
+            <li><a href="service-details.html?id=fuel-injection"><i class="bi bi-chevron-right text-accent"></i> Fuel Systems</a></li>
+            <li><a href="service-details.html?id=transmission-drivetrain"><i class="bi bi-chevron-right text-accent"></i> Transmissions</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-6 footer-col">
+          <h5 class="footer-title">Navigation</h5>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="bi bi-chevron-right text-accent"></i> Home</a></li>
+            <li><a href="about.html"><i class="bi bi-chevron-right text-accent"></i> About Us</a></li>
+            <li><a href="services.html"><i class="bi bi-chevron-right text-accent"></i> Services</a></li>
+            <li><a href="pricing.html"><i class="bi bi-chevron-right text-accent"></i> Pricing Guide</a></li>
+            <li><a href="blog.html"><i class="bi bi-chevron-right text-accent"></i> Tech Journal</a></li>
+            <li><a href="contact.html"><i class="bi bi-chevron-right text-accent"></i> Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-6 footer-col">
+          <h5 class="footer-title">Workshop Bay</h5>
+          <p class="small text-secondary mb-2">
+            <i class="bi bi-geo-alt-fill text-accent me-2"></i> 1044 Industrial Parkway, Bay 4, Heavy District
+          </p>
+          <p class="small text-secondary mb-2">
+            <i class="bi bi-telephone-fill text-accent me-2"></i> (555) 123-4567 | Dispatch: (555) 987-6543
+          </p>
+          <div class="p-2 rounded bg-subtle border border-secondary mt-3">
+            <span class="d-block small text-muted font-heading text-uppercase">Operating Hours</span>
+            <span class="small text-primary-theme d-block">Mon–Fri: 7:00 AM – 6:00 PM | Sat: 8:00 AM – 2:00 PM</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom d-flex flex-wrap justify-content-between align-items-center gap-2">
+        <div>
+          &copy; <span class="current-year">2026</span> Titan Diesel Works. Commercial Demonstration Template.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/rtl.js"></script>
+  <script src="assets/js/navigation.js"></script>
+  <script src="assets/js/forms.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

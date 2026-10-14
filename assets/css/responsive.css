@@ -1,0 +1,559 @@
+/* ==========================================================================
+   TITAN DIESEL REPAIR & PERFORMANCE - RESPONSIVE STYLESHEET
+   Comprehensive Breakpoint Optimization: 320px to 1400px+
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. LARGE DESKTOP & WIDE DISPLAYS (>= 1400px)
+   -------------------------------------------------------------------------- */
+@media (min-width: 1400px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: 1360px;
+  }
+
+  .hero-section-1, .hero-section-2 {
+    min-height: 85vh;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   2. DESKTOP SCREENS (1200px - 1399px)
+   -------------------------------------------------------------------------- */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .hero-section-1, .hero-section-2 {
+    min-height: 80vh;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   3. SMALL DESKTOP / LAPTOPS (992px - 1199px)
+   -------------------------------------------------------------------------- */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .navbar-nav .nav-link {
+    padding-left: 0.6rem !important;
+    padding-right: 0.6rem !important;
+    font-size: 0.88rem;
+  }
+  
+  .btn-industrial-primary, .btn-industrial-secondary {
+    padding: 0.75rem 1.4rem;
+    font-size: 0.925rem;
+  }
+  
+  .pricing-rate {
+    font-size: 2.6rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   4. TABLETS & VERTICAL SCREENS (768px - 991px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 991.98px) {
+  /* Mobile / Tablet Header Navigation */
+  .navbar-collapse {
+    position: absolute;
+    top: calc(100% + 0.25rem);
+    right: max(1rem, calc((100vw - 1360px) / 2));
+    width: min(360px, calc(100vw - 2rem));
+    max-height: calc(100dvh - 6rem);
+    overflow-y: auto;
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    padding: 1.5rem;
+    margin-top: 1rem;
+    box-shadow: var(--card-shadow);
+  }
+  .navbar-collapse.collapsing {
+    height: auto !important;
+    transition: none;
+  }
+
+  .navbar-brand {
+    gap: 0.55rem;
+  }
+  .brand-mark {
+    width: 36px;
+    height: 36px;
+    flex: 0 0 36px;
+  }
+  .brand-name {
+    font-size: 1.2rem;
+  }
+  .brand-sub {
+    font-size: 0.56rem;
+    letter-spacing: 0.13em;
+  }
+  
+  .navbar-nav .nav-link {
+    padding: 0.75rem 0 !important;
+    border-bottom: 1px solid var(--border-light);
+  }
+  .navbar-nav .nav-link.active::after {
+    display: none;
+  }
+  .navbar-nav .dropdown-menu {
+    position: static;
+    width: 100%;
+    min-width: 0;
+    border: none;
+    box-shadow: none;
+    background-color: var(--bg-surface);
+    padding: 0.5rem 1rem;
+    margin-top: 0.25rem;
+    margin-bottom: 0.5rem;
+  }
+  .navbar-nav .dropdown-item {
+    display: flex;
+    align-items: flex-start;
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+  .navbar-nav .dropdown-item i {
+    flex: 0 0 auto;
+    margin-top: 0.2rem;
+  }
+  
+  .header-actions {
+    margin-top: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  .header-actions .btn-industrial-primary {
+    width: 100%;
+  }
+  .mobile-nav-booking {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-light);
+  }
+  .mobile-nav-booking .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Hero Adjustments */
+  .hero-section-1, .hero-section-2 {
+    min-height: auto;
+    padding: 4.5rem 0 3.5rem;
+  }
+  
+  /* Sidebar stacks naturally below main content */
+  .detail-sidebar {
+    margin-top: 2.5rem;
+  }
+
+  /* Capability items in tablet */
+  .capability-item {
+    margin-bottom: 1rem;
+  }
+
+  /* Process steps connectors */
+  .process-step-item {
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   5. LARGE MOBILE SCREENS (576px - 767px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 767.98px) {
+  .section-header {
+    text-align: left;
+    margin-bottom: 2rem;
+  }
+  
+  .topbar {
+    display: none; /* Hide topbar on mobile to save vertical real estate */
+  }
+
+  .btn-industrial-primary, .btn-industrial-secondary {
+    width: 100%;
+  }
+  .hero-btn-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  /* Responsive Table Wrap */
+  .table-responsive-industrial {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+  }
+  .table-responsive-industrial .table-industrial {
+    margin-bottom: 0;
+    min-width: 600px;
+  }
+
+  /* Dyno Specs Mobile */
+  .dyno-spec-card {
+    margin-top: 2rem;
+  }
+  
+  /* Footer adjustments */
+  .site-footer {
+    padding-top: 3.5rem;
+  }
+  .footer-col {
+    margin-bottom: 2rem;
+  }
+
+  .hero-section-2 {
+    padding: 3.5rem 0 2.5rem;
+  }
+  .hero-section-2 .row {
+    --bs-gutter-y: 1.5rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   6. STANDARD MOBILE SCREENS (375px - 575px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 575.98px) {
+  :root {
+    --section-padding-y: 3.5rem;
+  }
+
+  .brand-name {
+    font-size: 1.05rem;
+  }
+  .brand-mark {
+    width: 32px;
+    height: 32px;
+    flex-basis: 32px;
+  }
+  .brand-sub {
+    font-size: 0.5rem;
+    letter-spacing: 0.1em;
+  }
+  .hero-section-2 .hero-editorial-badge {
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    padding: 0.35rem 0.65rem;
+  }
+  .hero-section-2 h1 {
+    font-size: 2rem;
+    line-height: 1.12;
+  }
+  .hero-section-2 .lead {
+    font-size: 1rem !important;
+    line-height: 1.6;
+  }
+  .navbar-brand {
+    min-width: 0;
+    margin-right: 0.5rem;
+  }
+  .navbar-brand .brand-text {
+    min-width: 0;
+  }
+  .navbar-brand .brand-name {
+    white-space: nowrap;
+  }
+  .navbar > .container > .d-flex {
+    flex-shrink: 0;
+    gap: 0.35rem !important;
+  }
+
+  h1, .h1 {
+    font-size: 2.1rem;
+  }
+  h2, .h2 {
+    font-size: 1.7rem;
+  }
+  h3, .h3 {
+    font-size: 1.35rem;
+  }
+
+  .industrial-card-body {
+    padding: 1.25rem;
+  }
+
+  .pricing-rate {
+    font-size: 2.4rem;
+  }
+
+  /* Form spacing */
+  .appointment-booking-box {
+    padding: 1.5rem !important;
+  }
+
+  .modal-dialog {
+    max-width: calc(100% - 1rem);
+    margin: 0.5rem auto;
+  }
+  .modal-header.booking-modal-header {
+    align-items: flex-start;
+    gap: 0.5rem;
+    padding: 0.85rem !important;
+  }
+  .booking-modal-heading {
+    flex: 1 1 auto;
+    min-width: 0;
+    align-items: flex-start !important;
+    gap: 0.6rem !important;
+  }
+  .booking-modal-heading > .brand-mark {
+    flex: 0 0 32px;
+  }
+  .booking-modal-copy {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+  .booking-modal-copy .modal-title {
+    font-size: 1rem;
+    line-height: 1.2;
+    overflow-wrap: anywhere;
+  }
+  .booking-modal-copy .small {
+    display: block;
+    font-size: 0.72rem !important;
+    line-height: 1.4;
+    overflow-wrap: anywhere;
+  }
+  .booking-modal-header .btn-close {
+    flex: 0 0 auto;
+    margin: 0.15rem 0 0 0.2rem;
+    padding: 0.45rem;
+  }
+  .modal-body.p-4 {
+    padding: 1rem !important;
+  }
+  .modal-body .form-select {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    padding-right: 2.25rem;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .modal-body .form-control {
+    min-width: 0;
+    max-width: 100%;
+    font-size: 0.9rem;
+    padding: 0.7rem 0.8rem;
+  }
+  .booking-modal-status > div,
+  .modal-body .bg-subtle.border-secondary.mb-4 > div {
+    flex-direction: column;
+    align-items: flex-start !important;
+  }
+  .booking-modal-credential,
+  .modal-body .bg-subtle.border-secondary.mb-4 > div > span:last-child {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.35rem;
+    line-height: 1.4;
+  }
+  .booking-modal-credential i,
+  .modal-body .bg-subtle.border-secondary.mb-4 > div > span:last-child i {
+    flex: 0 0 auto;
+    margin-top: 0.15rem;
+  }
+
+  .emergency-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .emergency-actions .emergency-action-link {
+    width: 100%;
+    justify-content: flex-start;
+    text-align: left;
+    padding: 0.9rem 1rem;
+  }
+  .emergency-actions .emergency-action-link > i {
+    flex: 0 0 1.25rem;
+    text-align: center;
+  }
+  .emergency-action-label {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 1.3;
+  }
+
+  .direction-title {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.55rem;
+  }
+  .direction-title > i {
+    flex: 0 0 auto;
+    margin: 0.15rem 0 0 !important;
+  }
+  .direction-title > span {
+    min-width: 0;
+  }
+  .direction-actions {
+    flex-direction: column;
+  }
+  .direction-actions .btn {
+    width: 100%;
+    justify-content: flex-start;
+    text-align: left;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .direction-actions {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.75rem !important;
+  }
+  .direction-actions .btn {
+    width: 100%;
+    min-width: 0;
+    justify-content: flex-start;
+    text-align: left;
+    white-space: normal;
+  }
+  .direction-actions .btn > i {
+    flex: 0 0 auto;
+  }
+
+  .inspection-metric-card {
+    min-height: 140px;
+    padding: 0.9rem !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .inspection-metric-label {
+    min-height: 2.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.35;
+  }
+  .inspection-metric-value {
+    font-size: 1.15rem;
+    line-height: 1.15;
+    overflow-wrap: anywhere;
+  }
+
+  .article-meta-share {
+    flex-direction: column;
+    align-items: stretch !important;
+  }
+  .article-share-group {
+    width: 100%;
+    flex-wrap: nowrap;
+    gap: 0.5rem !important;
+  }
+  .article-share-label {
+    margin-right: auto !important;
+    white-space: nowrap;
+  }
+  .article-share-group .btn-icon-square {
+    flex: 0 0 2.75rem;
+    width: 2.75rem;
+    height: 2.75rem;
+  }
+  .related-articles-heading {
+    flex-direction: column;
+    align-items: stretch !important;
+    gap: 1rem;
+  }
+  .related-articles-title {
+    max-width: 12ch;
+  }
+  .related-articles-heading > a {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   7. SMALL MOBILE (320px - 374px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 374.98px) {
+  body {
+    font-size: 15px;
+  }
+
+  h1, .h1 {
+    font-size: 1.85rem;
+  }
+
+  .btn-industrial-primary, .btn-industrial-secondary {
+    font-size: 0.88rem;
+    padding: 0.75rem 1rem;
+  }
+
+  .brand-sub {
+    display: none;
+  }
+  .brand-name {
+    font-size: 0.98rem;
+  }
+  .brand-mark {
+    width: 30px;
+    height: 30px;
+    flex-basis: 30px;
+  }
+
+  .navbar-brand {
+    gap: 0.4rem;
+    margin-right: 0.35rem;
+  }
+  .navbar-toggler {
+    padding: 0.3rem 0.45rem;
+  }
+
+  .card-img-wrapper {
+    aspect-ratio: 16 / 11;
+  }
+
+  .nav-controls {
+    gap: 0.25rem;
+  }
+  .control-btn {
+    width: 34px;
+    height: 34px;
+    font-size: 0.85rem;
+  }
+
+  #performanceStages .industrial-card > .p-4 {
+    padding: 0.85rem !important;
+  }
+  #performanceStages .industrial-card-body {
+    padding: 0.9rem;
+  }
+  #performanceStages .industrial-card-body > .d-flex.align-items-baseline {
+    align-items: baseline !important;
+    gap: 0.4rem !important;
+  }
+  #performanceStages .industrial-card-body .display-6 {
+    font-size: 1.8rem;
+  }
+  #performanceStages .spec-list-item {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.1rem;
+    padding: 0.4rem 0;
+  }
+  #performanceStages .spec-value {
+    text-align: left;
+    overflow-wrap: anywhere;
+  }
+  #performanceStages .spec-list-item .spec-value {
+    padding-left: 1.4rem;
+  }
+  #performanceStages .spec-pill {
+    font-size: 0.68rem;
+  }
+  #performanceStages .industrial-card-footer {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.35rem;
+    padding: 0.9rem;
+  }
+}
