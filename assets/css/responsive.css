@@ -45,6 +45,42 @@
   }
 }
 
+/* Keep the full desktop navigation from crowding at narrow laptop widths. */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .navbar-collapse {
+    position: absolute;
+    top: calc(100% + 0.25rem);
+    right: max(1rem, calc((100vw - 960px) / 2));
+    width: min(360px, calc(100vw - 2rem));
+    max-height: calc(100dvh - 6rem);
+    overflow-y: auto;
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    padding: 1.5rem;
+    margin-top: 1rem;
+    box-shadow: var(--card-shadow);
+  }
+  .navbar-expand-xl .navbar-collapse:not(.show) { display: none !important; }
+  .navbar-expand-xl .navbar-collapse.show { display: block !important; }
+  .navbar-expand-xl .navbar-toggler { display: block; }
+  .navbar-expand-xl .navbar-nav .nav-link {
+    padding: 0.75rem 0 !important;
+    border-bottom: 1px solid var(--border-light);
+  }
+  .navbar-expand-xl .navbar-nav .nav-link.active::after { display: none; }
+  .navbar-expand-xl .navbar-nav .dropdown-menu {
+    position: static;
+    width: 100%;
+    min-width: 0;
+    border: none;
+    box-shadow: none;
+    background-color: var(--bg-surface);
+    padding: 0.5rem 1rem;
+    margin: 0.25rem 0 0.5rem;
+  }
+}
+
 /* --------------------------------------------------------------------------
    4. TABLETS & VERTICAL SCREENS (768px - 991px)
    -------------------------------------------------------------------------- */
