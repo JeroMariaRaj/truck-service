@@ -96,10 +96,10 @@ document.addEventListener('DOMContentLoaded', function () {
               <img src="${post.image}" alt="${post.title}" loading="lazy" width="500" height="300">
             </div>
             <div class="industrial-card-body">
-              <div class="d-flex align-items-center gap-3 text-muted small mb-2">
-                <span><i class="bi bi-calendar3 me-1"></i> ${post.date}</span>
+              <div class="d-flex align-items-center gap-3 text-muted small mb-2 article-card-meta">
+                <span class="article-meta-date"><i class="bi bi-calendar3 me-1"></i> ${post.date}</span>
                 <span>•</span>
-                <span><i class="bi bi-clock me-1"></i> ${post.readTime}</span>
+                <span class="article-meta-readtime"><i class="bi bi-clock me-1"></i> ${post.readTime}</span>
               </div>
               <h3 class="h4 mb-2">
                 <a href="blog-details.html?id=${post.id}" class="text-primary-theme text-decoration-none">
@@ -251,10 +251,10 @@ document.addEventListener('DOMContentLoaded', function () {
                 `).join('')}
 
                 <div class="p-3 rounded bg-subtle border border-secondary mt-4 mb-4">
-                  <h6 class="font-heading mb-2"><i class="bi bi-telephone-inbound text-accent me-2"></i> Suspecting This Issue?</h6>
+                  <h6 class="font-heading mb-2 blog-sidebar-cta-title"><i class="bi bi-telephone-inbound text-accent" aria-hidden="true"></i><span>Suspecting This Issue?</span></h6>
                   <p class="small text-secondary mb-3">Bring your vehicle to our diagnostic bay for a verified scan and relative cylinder analysis.</p>
-                  <a href="contact.html" class="btn btn-industrial-primary btn-industrial-sm w-100">
-                    <i class="bi bi-calendar-event me-1"></i> Book Diagnostic Bay
+                  <a href="contact.html" class="btn btn-industrial-primary btn-industrial-sm w-100 blog-diagnostic-cta">
+                    <i class="bi bi-calendar-event" aria-hidden="true"></i><span>Book Diagnostic Bay</span>
                   </a>
                 </div>
 

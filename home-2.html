@@ -74,11 +74,6 @@
             <li class="nav-item"><a class="nav-link" href="blog.html">Tech Journal</a></li>
             <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
           </ul>
-          <div class="mobile-nav-booking d-lg-none">
-            <button type="button" class="btn btn-industrial-primary" data-bs-toggle="modal" data-bs-target="#dynoBookingModal">
-              <i class="bi bi-lightning-charge me-2"></i> Book Dyno Session
-            </button>
-          </div>
         </div>
       </div>
     </nav>
@@ -104,8 +99,8 @@
               <button type="button" class="btn btn-industrial-primary btn-industrial-lg" data-bs-toggle="modal" data-bs-target="#dynoBookingModal">
                 <i class="bi bi-speedometer2 me-2"></i> Book Dyno Consultation
               </button>
-              <a href="projects.html" class="btn btn-industrial-secondary btn-industrial-lg">
-                <i class="bi bi-folder-check me-2"></i> View Verified Builds
+              <a href="contact.html" class="btn btn-industrial-secondary btn-industrial-lg">
+                <i class="bi bi-envelope me-2"></i> Make an Enquiry
               </a>
             </div>
             <div class="d-flex flex-wrap gap-3 font-mono text-muted small">
@@ -171,31 +166,31 @@
       <div class="container">
         <div class="row g-4 text-center">
           <div class="col-lg-3 col-6">
-            <div class="p-4 rounded border border-secondary bg-surface h-100">
+            <div class="p-4 rounded border border-secondary bg-surface h-100 performance-metric-card">
               <i class="bi bi-speedometer fs-1 text-accent mb-2 d-block"></i>
-              <div class="h2 font-heading mb-1">2,500+</div>
-              <span class="small text-muted font-heading text-uppercase">LB-FT Dyno Capacity</span>
+              <div class="h2 font-heading mb-1 performance-metric-value">2,500+</div>
+              <span class="small text-muted font-heading text-uppercase performance-metric-label">LB-FT Dyno Capacity</span>
             </div>
           </div>
           <div class="col-lg-3 col-6">
-            <div class="p-4 rounded border border-secondary bg-surface h-100">
+            <div class="p-4 rounded border border-secondary bg-surface h-100 performance-metric-card">
               <i class="bi bi-fan fs-1 text-accent mb-2 d-block"></i>
-              <div class="h2 font-heading mb-1">75,000 CFM</div>
-              <span class="small text-muted font-heading text-uppercase">High-Velocity Air Cell</span>
+              <div class="h2 font-heading mb-1 performance-metric-value">75,000 CFM</div>
+              <span class="small text-muted font-heading text-uppercase performance-metric-label">High-Velocity Air Cell</span>
             </div>
           </div>
           <div class="col-lg-3 col-6">
-            <div class="p-4 rounded border border-secondary bg-surface h-100">
+            <div class="p-4 rounded border border-secondary bg-surface h-100 performance-metric-card">
               <i class="bi bi-cpu fs-1 text-accent mb-2 d-block"></i>
-              <div class="h2 font-heading mb-1">5-Position</div>
-              <span class="small text-muted font-heading text-uppercase">SOTF Tow & Race Maps</span>
+              <div class="h2 font-heading mb-1 performance-metric-value">5-Position</div>
+              <span class="small text-muted font-heading text-uppercase performance-metric-label">SOTF Tow &amp; Race Maps</span>
             </div>
           </div>
           <div class="col-lg-3 col-6">
-            <div class="p-4 rounded border border-secondary bg-surface h-100">
+            <div class="p-4 rounded border border-secondary bg-surface h-100 performance-metric-card">
               <i class="bi bi-clock-history fs-1 text-accent mb-2 d-block"></i>
-              <div class="h2 font-heading mb-1">24-Hour</div>
-              <span class="small text-muted font-heading text-uppercase">Commercial Fleet SLA</span>
+              <div class="h2 font-heading mb-1 performance-metric-value">24-Hour</div>
+              <span class="small text-muted font-heading text-uppercase performance-metric-label">Commercial Fleet SLA</span>
             </div>
           </div>
         </div>
@@ -309,7 +304,7 @@
 
           <!-- Right: Live Chassis Dyno Engineering Console -->
           <div class="col-lg-5">
-            <div class="p-4 p-md-5 rounded border border-secondary bg-surface shadow-lg h-100 d-flex flex-column justify-content-between">
+            <div class="p-4 p-md-5 rounded border border-secondary bg-surface shadow-lg h-100 d-flex flex-column justify-content-between telemetry-card">
               <div>
                 <div class="d-flex justify-content-between align-items-center mb-3 pb-2 border-bottom border-secondary">
                   <span class="badge bg-warning text-dark font-heading text-uppercase">Dyno Cell Lab Telemetry</span>
@@ -358,9 +353,6 @@
                     <span class="d-block small text-muted font-heading text-uppercase">SuperFlow Testing SLA</span>
                     <span class="small font-mono text-accent">Dyno Sheet Included With Every Build</span>
                   </div>
-                  <a href="projects.html" class="btn btn-industrial-secondary btn-industrial-sm">
-                    Build Gallery <i class="bi bi-arrow-right ms-1"></i>
-                  </a>
                 </div>
               </div>
             </div>
@@ -424,15 +416,16 @@
               </div>
             </div>
             <div>
-              <a href="contact.html?service=fleet-maintenance" class="btn btn-industrial-primary">
-                <i class="bi bi-telephone-outbound me-2"></i> Request Commercial Fleet Proposal
+              <a href="contact.html?service=fleet-maintenance" class="btn btn-industrial-primary fleet-proposal-btn">
+                <i class="bi bi-telephone-outbound" aria-hidden="true"></i>
+                <span>Request Commercial Fleet Proposal</span>
               </a>
             </div>
           </div>
 
           <div class="col-lg-6 d-flex">
-            <div class="rounded overflow-hidden border border-secondary shadow-lg w-100 h-100" style="min-height: 440px;">
-              <img src="assets/images/services/commercial-fleet-maintenance.jpg" alt="Commercial Fleet Maintenance Lineup" class="w-100 h-100" style="object-fit: cover; object-position: center;">
+            <div class="rounded overflow-hidden border border-secondary shadow-lg w-100 h-100 fleet-image-frame" style="min-height: 440px;">
+              <img src="assets/images/services/commercial-fleet-maintenance.jpg" alt="Commercial Fleet Maintenance Lineup" class="w-100 h-100 fleet-image" style="object-fit: cover; object-position: center;">
             </div>
           </div>
         </div>

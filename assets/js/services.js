@@ -350,7 +350,7 @@ document.addEventListener('DOMContentLoaded', function () {
       <!-- Section 6: Related Diesel Services -->
       <section class="section-py">
         <div class="container">
-          <div class="d-flex justify-content-between align-items-end mb-4">
+          <div class="d-flex justify-content-between align-items-end mb-4 related-services-heading">
             <div>
               <span class="section-tagline"><i class="bi bi-collection"></i> Complementary Care</span>
               <h2 class="font-heading mb-0">Related Powertrain Services</h2>

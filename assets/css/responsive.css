@@ -28,6 +28,13 @@
 /* --------------------------------------------------------------------------
    3. SMALL DESKTOP / LAPTOPS (992px - 1199px)
    -------------------------------------------------------------------------- */
+@media (min-width: 992px) {
+  /* Align the telemetry panel with the full two-row engineering card grid. */
+  .telemetry-card {
+    height: calc(100% - 20px) !important;
+  }
+}
+
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .navbar-nav .nav-link {
     padding-left: 0.6rem !important;
@@ -256,6 +263,109 @@
     --section-padding-y: 3.5rem;
   }
 
+  .article-card-meta {
+    flex-wrap: wrap;
+    column-gap: 0.75rem !important;
+    row-gap: 0.25rem !important;
+  }
+  .article-card-meta .article-meta-date,
+  .article-card-meta .article-meta-readtime {
+    flex: 0 0 auto;
+    white-space: nowrap;
+  }
+  .article-card-meta > span:nth-child(2) {
+    display: none;
+  }
+
+  .detail-sidebar-box .spec-list-item {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    align-items: start;
+    column-gap: 0.75rem;
+  }
+  .detail-sidebar-box .spec-label,
+  .detail-sidebar-box .spec-value {
+    min-width: 0;
+  }
+  .detail-sidebar-box .spec-value {
+    text-align: right;
+    overflow-wrap: break-word;
+  }
+  .blog-sidebar-cta-title {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  .blog-sidebar-cta-title > i {
+    flex: 0 0 auto;
+    margin: 0 !important;
+  }
+  .blog-sidebar-cta-title > span {
+    min-width: 0;
+  }
+  .blog-diagnostic-cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
+    text-align: center;
+    white-space: normal;
+  }
+  .blog-diagnostic-cta > i {
+    flex: 0 0 auto;
+  }
+  .blog-diagnostic-cta > span {
+    min-width: 0;
+  }
+
+  .performance-metric-card {
+    min-height: 190px;
+    padding: 0.75rem !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .performance-metric-value {
+    font-size: 1.4rem;
+    line-height: 1.1;
+    white-space: nowrap;
+  }
+  .performance-metric-label {
+    max-width: 100%;
+    line-height: 1.4;
+    text-align: center;
+    overflow-wrap: normal;
+  }
+  .fleet-image-frame {
+    height: auto !important;
+    min-height: 0 !important;
+    aspect-ratio: 4 / 3;
+    flex: 0 0 auto;
+  }
+
+  .fleet-proposal-btn {
+    position: relative;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    text-align: center;
+    white-space: normal;
+  }
+  .fleet-proposal-btn i {
+    position: absolute;
+    left: 1.25rem;
+    margin: 0;
+  }
+  .fleet-proposal-btn span {
+    line-height: 1.35;
+  }
+
   .brand-name {
     font-size: 1.05rem;
   }
@@ -438,6 +548,24 @@
 }
 
 @media (max-width: 767.98px) {
+  .related-services-heading {
+    flex-direction: column;
+    align-items: stretch !important;
+    gap: 1rem;
+  }
+  .related-services-heading > div {
+    width: 100%;
+    min-width: 0;
+  }
+  .related-services-heading .section-tagline {
+    max-width: 100%;
+    white-space: nowrap;
+  }
+  .related-services-heading > a {
+    width: 100%;
+    justify-content: center;
+  }
+
   .direction-actions {
     display: grid !important;
     grid-template-columns: minmax(0, 1fr);
