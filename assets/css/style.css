@@ -912,7 +912,7 @@ a:hover {
   font-family: var(--font-heading);
   font-size: 3rem;
   font-weight: 800;
-  color: var(--border-color);
+  color: var(--text-muted);
   line-height: 1;
   margin-bottom: 0.75rem;
   transition: color var(--transition-fast);
