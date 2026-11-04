@@ -206,23 +206,20 @@ document.addEventListener('DOMContentLoaded', function () {
     blogDetailContainer.innerHTML = `
       <!-- Section 1: Article Header & Hero Banner -->
       <section class="detail-hero">
-        <div class="container">
+        <img src="${post.image || 'assets/images/hero/hero-blog.jpg'}" alt="${post.title}" class="hero-bg-img">
+        <div class="hero-bg-overlay"></div>
+        <div class="container hero-content">
           <div class="row align-items-center">
-            <div class="col-lg-8">
+            <div class="col-lg-9 col-xl-8">
               <span class="section-tagline"><i class="bi bi-book"></i> ${post.categoryLabel}</span>
-              <h1 class="h2 font-heading text-uppercase mb-3">${post.title}</h1>
+              <h1 class="display-4 font-heading text-uppercase mb-3">${post.title}</h1>
               <div class="d-flex flex-wrap align-items-center gap-4 text-muted small mb-3">
                 <span class="d-inline-flex align-items-center gap-2">
-                  <img src="${post.authorPhoto || getAuthorPhoto(post.author)}" alt="${post.author}" class="rounded-circle border border-accent flex-shrink-0" width="30" height="30" style="object-fit: cover;">
-                  <span><strong class="text-primary-theme">${post.author}</strong> <span class="text-secondary">(${post.authorRole})</span></span>
+                  <img src="${post.authorPhoto || getAuthorPhoto(post.author)}" alt="${post.author}" class="rounded-circle border border-accent flex-shrink-0" width="32" height="32" style="object-fit: cover;">
+                  <span><strong class="text-white">${post.author}</strong> <span class="text-light">(${post.authorRole})</span></span>
                 </span>
-                <span><i class="bi bi-calendar3 text-accent me-1"></i> ${post.date}</span>
-                <span><i class="bi bi-clock-history text-accent me-1"></i> ${post.readTime}</span>
-              </div>
-            </div>
-            <div class="col-lg-4 mt-3 mt-lg-0">
-              <div class="rounded overflow-hidden border border-secondary shadow">
-                <img src="${post.image}" alt="${post.title}" class="img-fluid w-100" style="max-height: 240px; object-fit: cover;">
+                <span class="text-light"><i class="bi bi-calendar3 text-accent me-1"></i> ${post.date}</span>
+                <span class="text-light"><i class="bi bi-clock-history text-accent me-1"></i> ${post.readTime}</span>
               </div>
             </div>
           </div>

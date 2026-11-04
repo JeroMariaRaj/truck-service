@@ -107,12 +107,14 @@ document.addEventListener('DOMContentLoaded', function () {
     projectDetailContainer.innerHTML = `
       <!-- Section 1: Project Hero, Vehicle Identification & Dyno Specs Header -->
       <section class="detail-hero">
-        <div class="container">
+        <img src="${project.image || 'assets/images/hero/hero-projects.jpg'}" alt="${project.title}" class="hero-bg-img">
+        <div class="hero-bg-overlay"></div>
+        <div class="container hero-content">
           <div class="row align-items-center">
-            <div class="col-lg-8">
+            <div class="col-lg-9 col-xl-8">
               <span class="section-tagline"><i class="bi bi-trophy-fill"></i> ${project.categoryLabel}</span>
-              <h1 class="h2 font-heading text-uppercase mb-2">${project.title}</h1>
-              <p class="lead text-accent mb-3"><i class="bi bi-truck me-2"></i> ${project.vehicle}</p>
+              <h1 class="display-4 font-heading text-uppercase mb-2">${project.title}</h1>
+              <p class="lead text-accent mb-4"><i class="bi bi-truck me-2"></i> ${project.vehicle}</p>
               <div class="d-flex flex-wrap gap-3">
                 <a href="#buildBreakdownSection" class="btn btn-industrial-primary">
                   <i class="bi bi-tools me-2"></i> Explore Teardown & Upgrades
@@ -120,11 +122,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 <a href="contact.html?service=performance-upgrades" class="btn btn-industrial-secondary">
                   <i class="bi bi-chat-left-dots me-2"></i> Discuss Similar Build
                 </a>
-              </div>
-            </div>
-            <div class="col-lg-4 mt-4 mt-lg-0">
-              <div class="rounded overflow-hidden border border-secondary shadow-lg">
-                <img src="${project.image}" alt="${project.title}" class="img-fluid w-100" style="max-height: 260px; object-fit: cover;">
               </div>
             </div>
           </div>

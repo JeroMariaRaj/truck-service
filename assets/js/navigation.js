@@ -62,15 +62,53 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // 3. Header scroll elevation effect
+  // 3. Smart Sticky Header: Hides on scroll-down, reveals on scroll-up
   const siteHeader = document.querySelector('.site-header');
   if (siteHeader) {
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 40) {
-        siteHeader.classList.add('header-scrolled');
-      } else {
-        siteHeader.classList.remove('header-scrolled');
+    let lastScrollY = window.pageYOffset || document.documentElement.scrollTop;
+    let ticking = false;
+    const SCROLL_THRESHOLD = 8; // Avoid jitter from micro-scrolls
+
+    function updateHeaderOnScroll() {
+      const currentScrollY = window.pageYOffset || document.documentElement.scrollTop;
+      const delta = currentScrollY - lastScrollY;
+
+      // Keep header visible if mobile navbar collapse is currently open
+      if (navCollapse && navCollapse.classList.contains('show')) {
+        siteHeader.classList.remove('header-hidden');
+        lastScrollY = currentScrollY;
+        ticking = false;
+        return;
       }
-    });
+
+      if (currentScrollY <= 60) {
+        // At the top of the page - return to natural position
+        siteHeader.classList.remove('header-scrolled');
+        siteHeader.classList.remove('header-hidden');
+        siteHeader.classList.remove('header-visible');
+      } else {
+        siteHeader.classList.add('header-scrolled');
+
+        if (delta > SCROLL_THRESHOLD && currentScrollY > 140) {
+          // Scrolling DOWN: hide header
+          siteHeader.classList.add('header-hidden');
+          siteHeader.classList.remove('header-visible');
+        } else if (delta < -SCROLL_THRESHOLD) {
+          // Scrolling UP: reveal sticky header
+          siteHeader.classList.remove('header-hidden');
+          siteHeader.classList.add('header-visible');
+        }
+      }
+
+      lastScrollY = currentScrollY <= 0 ? 0 : currentScrollY;
+      ticking = false;
+    }
+
+    window.addEventListener('scroll', () => {
+      if (!ticking) {
+        window.requestAnimationFrame(updateHeaderOnScroll);
+        ticking = true;
+      }
+    }, { passive: true });
   }
 });

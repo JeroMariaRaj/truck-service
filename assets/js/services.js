@@ -149,12 +149,14 @@ document.addEventListener('DOMContentLoaded', function () {
     serviceDetailContainer.innerHTML = `
       <!-- Section 1: Hero Overview -->
       <section class="detail-hero">
-        <div class="container">
+        <img src="${service.image || 'assets/images/hero/hero-services.jpg'}" alt="${service.title}" class="hero-bg-img">
+        <div class="hero-bg-overlay"></div>
+        <div class="container hero-content">
           <div class="row align-items-center">
-            <div class="col-lg-8">
+            <div class="col-lg-9 col-xl-8">
               <span class="section-tagline"><i class="bi bi-wrench-adjustable"></i> ${service.categoryLabel}</span>
               <h1 class="display-4 font-heading text-uppercase mb-3">${service.title}</h1>
-              <p class="lead text-secondary mb-4" style="font-size: 1.15rem; max-width: 650px;">${service.tagline}</p>
+              <p class="lead text-secondary mb-4" style="font-size: 1.15rem; max-width: 680px;">${service.tagline}</p>
               <div class="d-flex flex-wrap gap-3">
                 <button type="button" class="btn btn-industrial-primary btn-book-service" data-bs-toggle="modal" data-bs-target="#serviceBookingModal">
                   <i class="bi bi-calendar-check-fill me-2"></i> Book This Service
@@ -162,11 +164,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 <a href="#symptomsSection" class="btn btn-industrial-secondary">
                   <i class="bi bi-list-check me-2"></i> Diagnostic Symptoms
                 </a>
-              </div>
-            </div>
-            <div class="col-lg-4 mt-4 mt-lg-0">
-              <div class="rounded overflow-hidden border border-secondary shadow-lg">
-                <img src="${service.image}" alt="${service.title}" class="img-fluid w-100" style="max-height: 280px; object-fit: cover;">
               </div>
             </div>
           </div>
