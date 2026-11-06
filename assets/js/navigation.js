@@ -62,53 +62,19 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // 3. Smart Sticky Header: Hides on scroll-down, reveals on scroll-up
+  // 3. Persistent Sticky Header: Always visible throughout scrolling across all sections
   const siteHeader = document.querySelector('.site-header');
   if (siteHeader) {
-    let lastScrollY = window.pageYOffset || document.documentElement.scrollTop;
-    let ticking = false;
-    const SCROLL_THRESHOLD = 8; // Avoid jitter from micro-scrolls
-
-    function updateHeaderOnScroll() {
+    function handleHeaderScroll() {
       const currentScrollY = window.pageYOffset || document.documentElement.scrollTop;
-      const delta = currentScrollY - lastScrollY;
-
-      // Keep header visible if mobile navbar collapse is currently open
-      if (navCollapse && navCollapse.classList.contains('show')) {
-        siteHeader.classList.remove('header-hidden');
-        lastScrollY = currentScrollY;
-        ticking = false;
-        return;
-      }
-
-      if (currentScrollY <= 60) {
-        // At the top of the page - return to natural position
-        siteHeader.classList.remove('header-scrolled');
-        siteHeader.classList.remove('header-hidden');
-        siteHeader.classList.remove('header-visible');
-      } else {
+      if (currentScrollY > 20) {
         siteHeader.classList.add('header-scrolled');
-
-        if (delta > SCROLL_THRESHOLD && currentScrollY > 140) {
-          // Scrolling DOWN: hide header
-          siteHeader.classList.add('header-hidden');
-          siteHeader.classList.remove('header-visible');
-        } else if (delta < -SCROLL_THRESHOLD) {
-          // Scrolling UP: reveal sticky header
-          siteHeader.classList.remove('header-hidden');
-          siteHeader.classList.add('header-visible');
-        }
+      } else {
+        siteHeader.classList.remove('header-scrolled');
       }
-
-      lastScrollY = currentScrollY <= 0 ? 0 : currentScrollY;
-      ticking = false;
     }
 
-    window.addEventListener('scroll', () => {
-      if (!ticking) {
-        window.requestAnimationFrame(updateHeaderOnScroll);
-        ticking = true;
-      }
-    }, { passive: true });
+    window.addEventListener('scroll', handleHeaderScroll, { passive: true });
+    handleHeaderScroll(); // Set initial state
   }
 });
